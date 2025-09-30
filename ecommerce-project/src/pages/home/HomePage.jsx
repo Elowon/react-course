@@ -2,7 +2,7 @@ import axios from "axios";
 import { HeaderPage } from "../../components/HeaderPage";
 import { useEffect, useState } from "react";
 import "./HomePage.css";
-import { ProductsGrid } from "./productsGrid";
+import { ProductsGrid } from "./ProductsGrid";
 import { useSearchParams } from "react-router";
 
 export function HomePage({ cart, loadCart }) {
