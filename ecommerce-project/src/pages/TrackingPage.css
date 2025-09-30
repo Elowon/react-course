@@ -37,11 +37,17 @@
 
 .tracking-page .progress-labels-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
-  flex-wrap: nowrap;
+}
+@media (max-width: 450px) {
+  .tracking-page .progress-labels-container {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .tracking-page .current-status {
