@@ -45,8 +45,6 @@
 }
 
 .header .mobile-logo {
-  height: 50px;
-  width: 50px;
   display: none;
 }
 
@@ -156,5 +154,6 @@
   display: flex;
   margin: auto;
   margin-right: 8px;
+  marging-left: 8px;
   border-radius: 50%;
 }
