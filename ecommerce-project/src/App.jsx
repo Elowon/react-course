@@ -3,6 +3,7 @@ import { CheckoutPage } from "./pages/checkout/CheckoutPage";
 import { HomePage } from "./pages/home/HomePage";
 import { OrdersPage } from "./pages/orders/OrdersPage";
 import { TrackingPage } from "./pages/TrackingPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 import { Routes, Route } from "react-router";
 import "./App.css";
 import { useState, useEffect } from "react";
@@ -24,6 +25,7 @@ function App() {
       <Route path="Checkout" element={<CheckoutPage cart={cart} loadCart={loadCart} />} />
       <Route path="orders" element={<OrdersPage cart={cart} loadCart={loadCart} />} />
       <Route path="tracking/:orderId/:productId" element={<TrackingPage cart={cart} />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
