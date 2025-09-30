@@ -150,3 +150,11 @@
   width: 26px;
   text-align: center;
 }
+.header .order-i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin: auto;
+  margin-right: 8px;
+  border-radius: 50%;
+}
