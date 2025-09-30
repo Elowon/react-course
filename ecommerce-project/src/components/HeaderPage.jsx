@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./HeaderPage.css";
 import { Link, useNavigate, useSearchParams } from "react-router";
-import headerImage from '../logo-logo.png';
+import headerImage from '../logo-whitee.png';
 
 export function HeaderPage({ cart }) {
   const navigate = useNavigate();
