@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./HeaderPage.css";
 import { Link, useNavigate, useSearchParams } from "react-router";
 import headerImage from '../logo-whitee.png';
+import orderImage from '../logo-order2.jpg'
 
 export function HeaderPage({ cart }) {
   const navigate = useNavigate();
@@ -52,6 +53,7 @@ export function HeaderPage({ cart }) {
 
       <div className="right-section">
         <Link className="orders-link header-link" to="/Orders">
+          <span className="order-i"> <img src={orderImage} /></span>
           <span className="orders-text">Orders</span>
         </Link>
 
