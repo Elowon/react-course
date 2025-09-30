@@ -43,12 +43,15 @@ app.use("/api/payment-summary", paymentSummaryRoutes);
 app.use(express.static(path.join(__dirname, "dist")));
 
 // Catch-all route to serve / for any unmatched routes
+app.use(express.static(path.join(__dirname, "../ecommerce-project/dist")));
+
+// Catch-all route to serve React app for any unmatched routes
 app.get("*", (req, res) => {
-  const indexPath = path.join(__dirname, "dist", "/");
+  const indexPath = path.join(__dirname, "../ecommerce-project/dist/index.html");
   if (fs.existsSync(indexPath)) {
     res.sendFile(indexPath);
   } else {
-    res.status(404).send("/ not found");
+    res.status(404).send("Frontend not found");
   }
 });
 
