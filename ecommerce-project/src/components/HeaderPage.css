@@ -45,6 +45,8 @@
 }
 
 .header .mobile-logo {
+  height: 50px;
+  width: 50px;
   display: none;
 }
 
